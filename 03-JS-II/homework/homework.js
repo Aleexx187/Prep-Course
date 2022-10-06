@@ -240,7 +240,7 @@ function esPrimo(numero) {
       esPrimo = false;
       return false;
     
-    } i = numero;
+    }
  
  }}
 
