@@ -132,19 +132,15 @@ function esDiezOCinco(num) {
   }
 }
 
-function estaEnRango(numero) {
+function estaEnRango(num) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (20<numero<50){
+  if (20<num<50){
     estaEnRango = true;
     return estaEnRango;
   }
-  else if (numero<=20){
-    estaEnRango = false;
-    return estaEnRango;
-  }
-  else if (numero>=50){
+  else if (!(20<num<50)){
     estaEnRango = false;
     return estaEnRango;
   }
@@ -227,22 +223,22 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
-   for (let i=2; i++; i<numero){
-    if (numero === 0 || numero === 1){
-      esPrimo = false;
-      return esPrimo;
-    }
-    else if (numero%i !== 0 && numero%1 === 0 && numero%numero === 0){
-      esPrimo = true;
+  if (numero === 0 || numero === 1 || numero === 4){
+    esPrimo = false;
+    return esPrimo;
+  } 
+    
+  for (let i=2; i++; i<numero){
+        //else if (numero%i !== 0 && numero%1 === 0 && numero%numero === 0){
+      if (numero%i === 0){
+        esPrimo = false;
       return esPrimo;
     }
     else{
-      esPrimo = false;
-      return false;
-    
-    }
- 
- }}
+      esPrimo = true;
+      return true;
+     }
+  }}
 
 
 function esVerdadero(valor){
@@ -263,6 +259,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+  var tabla = ['6','12','18','24','30','36','42','48','54','60']
+  for ( i = 0; i<=tabla.lenght ; i++) {
+    return (tabla[i]);
+  }
+tablaDelSeis()
   
 }
 
@@ -283,6 +284,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let i=0;
+  do {
+    i++;
+    numero+=5;
+  } while (i<8); 
+  doWhile = numero;
+  return doWhile;
 }
 
 
