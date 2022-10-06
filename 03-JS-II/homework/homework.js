@@ -136,14 +136,15 @@ function estaEnRango(num) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (20<num<50){
+  if (num>20 && num<50){
     estaEnRango = true;
     return estaEnRango;
   }
-  else if (!(20<num<50)){
+  else {
     estaEnRango = false;
     return estaEnRango;
   }
+  
 }
 
 function esEntero(numero) {
@@ -223,22 +224,20 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
-  if (numero === 0 || numero === 1 || numero === 4){
+  if (numero === 0 || numero === 1){
     esPrimo = false;
     return esPrimo;
   } 
-    
-  for (let i=2; i++; i<numero){
-        //else if (numero%i !== 0 && numero%1 === 0 && numero%numero === 0){
-      if (numero%i === 0){
+      if (numero%2 === 0 || numero%3 === 0){
         esPrimo = false;
-      return esPrimo;
-    }
-    else{
-      esPrimo = true;
-      return true;
-     }
-  }}
+        return esPrimo;
+      }
+     else {
+        esPrimo = true;
+         return esPrimo;
+}
+    
+}
 
 
 function esVerdadero(valor){
@@ -259,25 +258,25 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var tabla = ['6','12','18','24','30','36','42','48','54','60']
-  for ( i = 0; i<=tabla.lenght ; i++) {
-    return (tabla[i]);
+  var tabla = [];
+  for ( let i = 0; i<11 ; i++) {
+    tabla.push(i*6);   
   }
-tablaDelSeis()
-  
+    tablaDelSeis = tabla;
+    return tablaDelSeis;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (100<=numero<=999){
-    tieneTresDigitos = true;
-    return tieneTresDigitos;
-  }
-  else {
-    tieneTresDigitos = false;
-    return tieneTresDigitos;
-  }
+ if (String(numero).length === 3){
+  tieneTresDigitos = true;
+   return tieneTresDigitos; 
+}
+ else{
+  tieneTresDigitos = false;
+  return tieneTresDigitos;
+ }
 }
 
 function doWhile(numero) {
