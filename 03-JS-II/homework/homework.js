@@ -228,7 +228,12 @@ function esPrimo(numero) {
     esPrimo = false;
     return esPrimo;
   } 
-      if (numero%2 === 0 || numero%3 === 0){
+   else if (numero === 2 || numero === 3){
+    esPrimo = true;
+    return esPrimo;
+   } 
+  
+   else if (numero%2 === 0 || numero%3 === 0){
         esPrimo = false;
         return esPrimo;
       }
