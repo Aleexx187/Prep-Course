@@ -1,20 +1,29 @@
 // No cambies los nombres de las funciones.
 
+const { stringify } = require("git-url-parse");
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  devolverPrimerElemento = array[0];
+  return devolverPrimerElemento;
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var ultimo = (array.length) - 1;
+  devolverUltimoElemento = array[ultimo];
+  return devolverUltimoElemento;
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  obtenerLargoDelArray = array.length;
+  return obtenerLargoDelArray;
 }
 
 
@@ -23,6 +32,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  for (let i=0 ; i<(array.length); i++){
+  array[i]+=1;
+  }
+  incrementarPorUno = array;
+  return incrementarPorUno;
 }
 
 
@@ -30,6 +44,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  agregarItemAlFinalDelArray = array;
+  return agregarItemAlFinalDelArray;
 }
 
 
@@ -38,6 +55,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  agregarItemAlComienzoDelArray = array;
+  return agregarItemAlComienzoDelArray;
 }
 
 
@@ -47,6 +67,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  for (let i=0; i<(palabras.length); i++){
+    var conca = (conca, string(palabras[i]));
+  } dePalabrasAFrase = conca;
+  return dePalabrasAFrase;
 }
 
 
@@ -54,13 +78,33 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-}
+  
+  
+    do{
+      for (let i=0; i<(array.length); i++){
+    if (array[i] !== elemento){
+    arrayContiene = false;
+    return arrayContiene; 
+    }
+      else {
+      arrayContiene = true;
+      return arrayContiene;
+           }
+   } }while (arrayContiene === true);
+        
+        }
 
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var suma = 0;
+  for (let i=0; i<(numeros.length); i++){
+        suma + numeros[i]; 
+  } agregarNumeros = suma;
+  return agregarNumeros
+  ;
 }
 
 
