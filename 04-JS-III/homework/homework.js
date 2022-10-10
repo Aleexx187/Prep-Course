@@ -13,7 +13,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var ultimo = (array.length) - 2;
+  var ultimo = (array.length) - 1;
   devolverUltimoElemento = array[ultimo];
   return devolverUltimoElemento;
 }
@@ -67,32 +67,37 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var conca=0;
+  for  (let i=0; i<1; i++){
+  conca += palabras[i];
+  }
   for (let i=0; i<(palabras.length); i++){
-    var conca = (conca, string(palabras[i]));
-  } dePalabrasAFrase = conca;
+    conca = " " + palabras[i];
+    } 
+  dePalabrasAFrase = conca;
   return dePalabrasAFrase;
 }
 
 
-function arrayContiene(array, elemento) {
+function arrayContiene(arr, item) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  
-  
-    do{
-      for (let i=0; i<(array.length); i++){
-    if (array[i] !== elemento){
-    arrayContiene = false;
-    return arrayContiene; 
-    }
-      else {
-      arrayContiene = true;
+   var n=0;
+    for (let i=0; i<(arr.length); i++){
+      if (arr[i] !== elemento){
+      n+=1;
+      }  
+      if (n === (arr.length)){
+      arrayContiene = false;
       return arrayContiene;
-           }
-   } }while (arrayContiene === true);
-        
+      }
+      if (n !== (arr.length)){
+        arrayContiene = true;
+        return arrayContiene;
         }
+      }
+  }
 
 
 function agregarNumeros(numeros) {
@@ -101,10 +106,9 @@ function agregarNumeros(numeros) {
   // Tu código:
   var suma = 0;
   for (let i=0; i<(numeros.length); i++){
-        suma + numeros[i]; 
+        suma += numeros[i]; 
   } agregarNumeros = suma;
-  return agregarNumeros
-  ;
+  return agregarNumeros;
 }
 
 
@@ -112,13 +116,34 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var suma = 0;
+  for (let i=0; i<(resultadosTest.length); i++){
+        suma += resultadosTest[i]; 
+  } agregarNumeros = suma/resultadosTest.length;
+  return agregarNumeros;
 }
+
 
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+   var grande; 
+   
+   for (let i=0; i<(numeros.length); i++){
+    var n=0;
+    for (let j=0; j<(numeros.length); j++){
+      if (numeros[i] > numeros[j]){
+            n+=1;
+          }
+    if (n === ((numeros.length)-1)){
+      grande = numeros[i];
+        }
+      }
+      }
+  numeroMasGrande = grande;
+  return numeroMasGrande;
 }
 
 
@@ -141,7 +166,16 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  switch (numeroDeDia){
+  case 1: diaDeLaSemana = "Es fin de semana"; break;
+  case 2: diaDeLaSemana = "Es dia Laboral"; break;
+  case 3: diaDeLaSemana = "Es dia Laboral"; break;
+  case 4: diaDeLaSemana = "Es dia Laboral"; break;
+  case 5: diaDeLaSemana = "Es dia Laboral"; break;
+  case 6: diaDeLaSemana = "Es dia Laboral"; break;
+  case 7: diaDeLaSemana = "Es fin de semana"; break;
+  } 
+  return diaDeLaSemana;
 } 
 
 
