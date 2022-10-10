@@ -13,7 +13,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var ultimo = (array.length) - 1;
+  var ultimo = (array.length) - 2;
   devolverUltimoElemento = array[ultimo];
   return devolverUltimoElemento;
 }
