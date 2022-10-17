@@ -143,7 +143,6 @@ function estaEnRango(num) {
      estaEnRango = false;
      return estaEnRango;
   }
-  
 }
 
 function esEntero(numero) {
