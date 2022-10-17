@@ -6,16 +6,16 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   if (x > y){
-    obtenerMayor = x;
-    return obtenerMayor;
+     obtenerMayor = x;
+     return obtenerMayor;
   }
   else if (y  > x){
-    obtenerMayor = y;
-    return obtenerMayor;
+     obtenerMayor = y;
+     return obtenerMayor;
   }
   else {
-    obtenerMayor = (x || y);
-    return obtenerMayor;
+     obtenerMayor = (x || y);
+     return obtenerMayor;
   }
 }
 
@@ -24,12 +24,12 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18){
-    mayoriaDeEdad = "Allowed";
-    return mayoriaDeEdad;
+     mayoriaDeEdad = "Allowed";
+     return mayoriaDeEdad;
   }
   else {
-    mayoriaDeEdad = "Not allowed";
-    return mayoriaDeEdad;
+     mayoriaDeEdad = "Not allowed";
+     return mayoriaDeEdad;
   }
 }
   
@@ -40,16 +40,16 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){
-   conection = "Online";
-   return conection;
+     conection = "Online";
+     return conection;
   }
   else if (status === 2){
-    conection = "Away";
-    return conection;
+     conection = "Away";
+     return conection;
   }
   else {
-    conection = "Offline";
-    return conection;
+     conection = "Offline";
+     return conection;
   }
 }
 
@@ -61,24 +61,24 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === "aleman"){
-    saludo = "Guten Tag!";
-    return saludo;
+     saludo = "Guten Tag!";
+     return saludo;
   }
   else if (idioma === "mandarin"){
-    saludo = "Ni Hao!";
-    return saludo;
+     saludo = "Ni Hao!";
+     return saludo;
   }
   else if (idioma === "ingles"){
-    saludo = "Hello!";
-    return saludo;
+     saludo = "Hello!";
+     return saludo;
   }
   else if (idioma === "undefined"){
-    saludo = "Hola!";
-    return saludo;
+     saludo = "Hola!";
+     return saludo;
   }
   else {
-    saludo = "Hola!";
-    return saludo;
+     saludo = "Hola!";
+     return saludo;
   }
 }
 
@@ -110,7 +110,6 @@ function colors(color) {
     default: 
     colors = "Color not found";
     return colors;
-
   }
 }
 
@@ -119,16 +118,16 @@ function esDiezOCinco(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num === 10){
-    esDiezOCinco = true;
-    return esDiezOCinco;
+     esDiezOCinco = true;
+     return esDiezOCinco;
   }
   else if (num === 5){
-    esDiezOCinco = true;
-    return esDiezOCinco;
+     esDiezOCinco = true;
+     return esDiezOCinco;
   }
   else {
-    esDiezOCinco = false;
-    return esDiezOCinco;
+     esDiezOCinco = false;
+     return esDiezOCinco;
   }
 }
 
@@ -137,12 +136,12 @@ function estaEnRango(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num>20 && num<50){
-    estaEnRango = true;
-    return estaEnRango;
+     estaEnRango = true;
+     return estaEnRango;
   }
   else {
-    estaEnRango = false;
-    return estaEnRango;
+     estaEnRango = false;
+     return estaEnRango;
   }
   
 }
@@ -155,13 +154,13 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if ((numero-(Math.floor(numero))) === 0){
-    esEntero = true;
-    return esEntero;
+  if ((numero - (Math.floor(numero))) === 0){
+     esEntero = true;
+     return esEntero;
   }
   else {
-    esEntero = false;
-    return esEntero;
+     esEntero = false;
+     return esEntero;
   }
 }
 
@@ -171,20 +170,20 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if ((numero%3 === 0) && (numero%5 === 0)){
-    fizzBuzz = "fizzbuzz";
-    return fizzBuzz;
+     fizzBuzz = "fizzbuzz";
+     return fizzBuzz;
   }
   else if (numero%3 === 0){
-    fizzBuzz = "fizz";
-    return fizzBuzz;
+     fizzBuzz = "fizz";
+     return fizzBuzz;
   }
   else if (numero%5 === 0){
-    fizzBuzz = "buzz";
-    return fizzBuzz;
+     fizzBuzz = "buzz";
+     return fizzBuzz;
   }
   else {
-    fizzBuzz = numero;
-    return fizzBuzz;
+     fizzBuzz = numero;
+     return fizzBuzz;
   }
 }
 
@@ -196,24 +195,24 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1 === 0 || num2 === 0 || num3 === 0){
-   operadoresLogicos = "Error";
-   return operadoresLogicos;
+     operadoresLogicos = "Error";
+     return operadoresLogicos;
   }
   else if (num1<0 || num2<0 || num3<0){
-    operadoresLogicos = "Hay negativos";
-    return operadoresLogicos;
+     operadoresLogicos = "Hay negativos";
+     return operadoresLogicos;
   }
   else if (num1>num2 && num1>num3){
-    operadoresLogicos = "Número 1 es mayor y positivo";
-    return operadoresLogicos;
+     operadoresLogicos = "Número 1 es mayor y positivo";
+     return operadoresLogicos;
   }
   else if (num3>num1 && num3>num2){
-    operadoresLogicos = num3 + 1;
-    return operadoresLogicos;
+     operadoresLogicos = num3 + 1;
+     return operadoresLogicos;
   }
   else {
-    operadoresLogicos = false;
-    return operadoresLogicos;
+     operadoresLogicos = false;
+     return operadoresLogicos;
   }
 }
 
@@ -223,25 +222,22 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  
   if (numero === 0 || numero === 1){
-    esPrimo = false;
-    return esPrimo;
+     esPrimo = false;
+     return esPrimo;
   } 
    else if (numero === 2 || numero === 3){
-    esPrimo = true;
-    return esPrimo;
+     esPrimo = true;
+     return esPrimo;
    } 
-  
    else if (numero%2 === 0 || numero%3 === 0){
-        esPrimo = false;
-        return esPrimo;
-      }
-     else {
+     esPrimo = false;
+     return esPrimo;
+   }
+    else {
         esPrimo = true;
-         return esPrimo;
-}
-    
+        return esPrimo;
+    }
 }
 
 
@@ -249,14 +245,14 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
- if (valor === true){
-  esVerdadero = "Soy verdadero";
-  return esVerdadero;
- }
- else {
-  esVerdadero = "Soy falso";
-  return esVerdadero;
- }
+  if (valor === true){
+     esVerdadero = "Soy verdadero";
+     return esVerdadero;
+  }
+  else {
+     esVerdadero = "Soy falso";
+     return esVerdadero;
+  }
 }
 
 function tablaDelSeis(){
@@ -264,24 +260,25 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var tabla = [];
-  for ( let i = 0; i<11 ; i++) {
-    tabla.push(i*6);   
+
+  for ( let i = 0 ; i<11 ; i++) {
+      tabla.push(i*6);   
   }
-    tablaDelSeis = tabla;
-    return tablaDelSeis;
+  tablaDelSeis = tabla;
+  return tablaDelSeis;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
- if (String(numero).length === 3){
-  tieneTresDigitos = true;
-   return tieneTresDigitos; 
-}
- else{
-  tieneTresDigitos = false;
-  return tieneTresDigitos;
- }
+  if (String(numero).length === 3){
+     tieneTresDigitos = true;
+     return tieneTresDigitos; 
+  }
+  else{
+     tieneTresDigitos = false;
+     return tieneTresDigitos;
+  }
 }
 
 function doWhile(numero) {
@@ -289,10 +286,11 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   let i=0;
+  
   do {
-    i++;
-    numero+=5;
-  } while (i<8); 
+     i++;
+     numero += 5;
+  } while (i < 8); 
   doWhile = numero;
   return doWhile;
 }
