@@ -65,10 +65,10 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (x === y) {
-    return true;
+     return true;
   }
   else {
-    return false;
+     return false;
   }
 }
 
@@ -77,10 +77,10 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (str1.length === str2.length){
-    return true;
+     return true;
   }
   else {
-    return false;
+     return false;
   }
 }
 
@@ -89,10 +89,10 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num<90){
-    return true;
+     return true;
   }
   else {
-    return false;
+     return false;
   }
 }
 
@@ -101,10 +101,10 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num>50){
-    return true;
+     return true;
   }
   else {
-    return false;
+     return false;
   }
 }
 
@@ -120,10 +120,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num%2 === 0){
-    return true;
+     return true;
   }
   else{
-    return false;
+     return false;
   }
 }
 
@@ -132,10 +132,10 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num%2 === 1){
-    return true;
+     return true;
   }
   else{
-    return false;
+     return false;
   }
 }
 
@@ -187,16 +187,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero>0){
-    esPositivo = "Es positivo";
-    return esPositivo;
+  if (numero > 0){
+     esPositivo = "Es positivo";
+     return esPositivo;
   }
   else if(numero<0){
-    esPositivo = "Es negativo";
-    return esPositivo;
+     esPositivo = "Es negativo";
+     return esPositivo;
   }
   else {
-    return false;
+     return false;
   }
 }
 
@@ -206,8 +206,6 @@ function agregarSimboloExclamacion(str) {
   // Tu código:
   agregarSimboloExclamacion = str + "!";
   return agregarSimboloExclamacion;
-
-
 }
 
 function combinarNombres(firstName, lastName) {
@@ -222,7 +220,7 @@ function obtenerSaludo(name) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-    obtenerSaludo = ("Hola" + " " + name + "!");
+  obtenerSaludo = ("Hola" + " " + name + "!");
   return obtenerSaludo; 
 }
 
@@ -266,18 +264,18 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length>1){
-   esVocal = "Dato incorrecto";
-   return esVocal;
+     esVocal = "Dato incorrecto";
+     return esVocal;
   }
   
   else if (letra==="a" || letra==="e" || letra==="i" || letra==="o" || letra==="u"){
-    esVocal = "Es vocal";
-    return esVocal;
+     esVocal = "Es vocal";
+     return esVocal;
   }
 
   else {
-    esVocal = "Dato incorrecto";
-    return esVocal;
+     esVocal = "Dato incorrecto";
+     return esVocal;
   }
 }
 
