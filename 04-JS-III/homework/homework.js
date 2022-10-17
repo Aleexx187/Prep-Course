@@ -257,24 +257,29 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  const año = [];
-  
-  if (array.includes("Enero" && "Marzo" && "Noviembre") === true){
-   for (i=0 ; i<(array.length); i++){
-    if (array[i] !== ("Enero" && "Marzo" && "Noviembre")){
-    array.splice(i,1);
-   }
-  }
-  mesesDelAño = array;
+ /* const año = [];
+  for (let i=0 ; i<(array.length); i++){
+  if (array.includes("Enero") === true){
+    if (array.includes("Marzo") === true){
+      if (array.includes("Noviembre") === true){
+        if (array[i] === (("Enero") || ("Marzo") || ("Noviembre"))){
+          año.push(array[i]);
+         }
+        }
+      }
+    }
+   
+    else {
+      mesesDelAño = "No se encontraron los meses pedidos";
+      return mesesDelAño;
+      break;
+      }
+ 
+  } mesesDelAño = año;
   return mesesDelAño;
 }
-  else {
-    mesesDelAño = "No se encontraron los meses pedidos";
-    return mesesDelAño;
-    }
 
-
-  
+  */
   /*
   if (array.includes("Enero" && "Marzo" && "Noviembre") === true){
 
@@ -381,7 +386,6 @@ function continueStatement(numero) {
   }
   breakStatement = nuevo;
   return breakStatement;
-
 }
 
 
