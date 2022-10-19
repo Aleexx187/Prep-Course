@@ -77,18 +77,15 @@ function tieneEmail (usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
   for (let clave in usuario){
-  if (clave === "email"){
-    if( usuario[clave] === String){
+     if (clave === "email" && (typeof clave) === string ){
     tieneEmail = true;
     return tieneEmail;
-  }
-}
-}
-    tieneEmail = false;
-    return tieneEmail;
-  
+      }
 }
 
+      tieneEmail = false;
+      return tieneEmail;
+}
 function tienePropiedad (objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
   // "propiedad" es un string
@@ -124,7 +121,7 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código:
   usuario["password"] = nuevaPassword;
-  actualizarPassword = usuario["password"];
+  actualizarPassword = usuario;
   return actualizarPassword;
 }
 
@@ -133,6 +130,10 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario.amigos.push(nuevoAmigo);
+  agregarAmigo = usuario;
+  return agregarAmigo;
+
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -141,6 +142,12 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  
+   usuarios.forEach(objects => {
+    objects.esPremium = true;
+   } );
+    pasarUsuarioAPremium = usuarios;
+    return pasarUsuarioAPremium;
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -150,6 +157,13 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  let sum = 0;
+
+    usuario.posts.forEach(objects => {
+    sum += objects.likes;
+   } );
+   sumarLikesDeUsuario = sum;
+   return sumarLikesDeUsuario;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
@@ -162,7 +176,14 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+    producto["calcularPrecioDescuento"] = function() { 
+     let des = 0;
+      des = (producto["precio"]) - ((producto["precio"]) * (producto["porcentajeDeDescuento"]));
+      return des;  
+    }
+    
+    agregarMetodoCalculoDescuento = producto;
+    return agregarMetodoCalculoDescuento;
 }
 
 // No modificar nada debajo de esta línea
