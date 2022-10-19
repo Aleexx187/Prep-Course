@@ -76,14 +76,17 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario["email"] !== false){
+  for (let clave in usuario){
+  if (clave === "email"){
+    if( usuario[clave] === String){
     tieneEmail = true;
     return tieneEmail;
   }
-  else {
+}
+}
     tieneEmail = false;
     return tieneEmail;
-  }
+  
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -91,6 +94,14 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  for (let clave in objeto){
+     if (clave === propiedad){
+       tienePropiedad = true;
+       return tienePropiedad;
+     }
+  }
+  tienePropiedad = false;
+  return tienePropiedad;
 }
 
 function verificarPassword (usuario, password) {
@@ -98,12 +109,23 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (usuario["password"] === password){
+    verificarPassword = true;
+    return verificarPassword;
+  }
+  else {
+    verificarPassword = false;
+    return verificarPassword;
+  }
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario["password"] = nuevaPassword;
+  actualizarPassword = usuario["password"];
+  return actualizarPassword;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
