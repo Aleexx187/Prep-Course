@@ -38,9 +38,9 @@ function agregarStringInvertida() {
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function(){
     let invertir = "";
-    for (var i=((this.length)-1) ; i>=0 ; i--){
-    invertir = invertir + this.charAt(i);
-    }
+      for (var i=((this.length)-1) ; i>=0 ; i--){
+         invertir = invertir + this.charAt(i);
+      }
     agregarStringInvertida = invertir;
     return agregarStringInvertida;
   };
@@ -80,7 +80,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
   let nuevapersona = new Persona(this.nombre, this.apellido, this.edad, this.dir );
-  return nuevapersona; 
+     return nuevapersona; 
 }
   
 function agregarMetodo() {
